@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
      <head>
+         <meta charset="utf-8">
 	     <link rel="stylesheet" href="{{ asset ('css/estilo.css') }}">
 	     <link rel="stylesheet" href="{{ asset ('css/main.css') }}">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	     <title>Mega Ferreterias- @yield('titulo')</title>
           <link rel="icon" href="img/icons/iconmega.ico">
           <!--- Trabajar con bootstrap menus -->
@@ -13,12 +15,13 @@
      </head>
 
      <body>
-      <div class="container">
+      <div class="container-fluid">
           @include('tiendaonline.secciones.menu-of')
+          </div>
            @if(\Session::has('mensaje'))
            @include('tiendaOnLine.secciones.mensajes')
           @endif
-      </div>
+    
          
           @yield('contenido')
           @include('tiendaonline.secciones.footer')

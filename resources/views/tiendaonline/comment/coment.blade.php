@@ -19,6 +19,7 @@
 				
 
 				<fieldset>
+					<h4>Formu...en prueba</h4>
 					<legend>Comentar</legend>
 					<div class="form-group">
 						<div class="col-lg-12">
@@ -29,7 +30,7 @@
 				<div class="form-group">
 					<div class="col-lg-10 col-lg-ofset-2">
 						<button type="reset"  class="btn btn-default">Cancelar</div>
-						<button type="submit" class="btn btn-primary">Publicar</div>
+						<button type="submit" class="btn btn-success">Publicar</div>
 					</div>
 				</div>
 			</fielset>

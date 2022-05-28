@@ -25,17 +25,17 @@
 	<div id="productos">
 		@foreach($productos as $producto)
         <div class="producto white-panel">
-         <h2>{{$producto->nombre}}</h2><hr>
+         <h4>{{$producto->nombre}}</h4><hr>
        
           <td><img src="{{$producto->imagen}}" width="200px"></td>
 
           <div class="producto-info panel">
-             <h3>Precio:$ {{$producto->precio}}</h3><hr>
+             <h5>Precio:$ {{$producto->precio}}</h5><hr>
             
              <p>
          	 <a class="btn btn-warning" href="{{route('carrito-agregar',$producto->id)}}"><i class="fa fa-cart-plus"></i> Agregar al carrito</a>
          	 <a class="btn btn-primary" href="{{route('producto-detalles',
-         	 $producto->id)}}"><i class="fa fa.chevron-circle-right"></i> Ver mas </a>
+         	 $producto->id)}}"><i class="fa fa.chevron-circle-right"></i> Detalles </a>
              </p>
           </div>
         </div>

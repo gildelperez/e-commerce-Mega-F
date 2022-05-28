@@ -9,7 +9,8 @@
 
 	    
 	   <div class="page-header">
-		<h1><i class="fa fa-shopping-cart"></i> Carrito de Compras</h1><br>
+		<h7> Mi Carrito<i class="fa fa-shopping-cart"></i></h7>
+		
 		<p>
 		<a href="{{route('carrito-vaciar')}}"
 		class="btn btn-danger">Vaciar Carrito
@@ -62,15 +63,15 @@
 			    @endforeach
 			   </tbody>
     </table>
-		        <h3>
+		        <h7>
 		    	<span class="label label-primary">Total a Pagar: ${{number_format($total,2)}}</span>
-		        </h3>
+		        </h7>
 		        </div>
 		       <a href="{{route('inicio')}}" class="btn btn-primary">
 		       <i class="fa fa-shopping-cart"></i>  Seguir Comprando
 	           </a>
 
-	             <a href="{{route('orden-detalles')}}" class="btn btn-primary"> Continuar  <i class="fa fa-arrow-circle-right"></i></a>    
+	             <a href="{{route('orden-detalles')}}" class="btn btn-primary"> Ordenar <i class="fa fa-arrow-circle-right"></i></a>    
                 </div> <br>
                 @else
                  <h3>No hay productos agregados en el carrito</h3>
